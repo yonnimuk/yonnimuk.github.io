@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(158, 45, 158);
+}
+
+#Cabecera {
+    width: 100%;
+    height: 20%;
+    margin: 0% auto;
+}
+
+li:hover {
+    color: white;
+    border: none;
+    border-width: 0 0.1rem;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
+
+ul a {
+    color: tomato;
+    text-decoration: none;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked~.left-panel {
+    left: 0;
+}
+
+.left-panel {
+    width: 40%;
+    height: 130%;
+    /* largo de la barra desplegable*/
+    /*background: linear-gradient(#7860bc #cf639e);
+    background: -o-linear-gradient(#7860bc #cf639e);
+    background: linear-gradient(#7860bc #cf639e); */
+    /* el degradado no funciono....caraja */
+    background: mediumpurple;
+    position: absolute;
+    top: 0%;
+    left: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.checkbox:checked~.menu {
+    /* checked es un selector de clases. seria como: clase checkbox selecciona(checked) a clase menu.  la virgulilla es importante ~ */
+    left: 40%;
+    /* indica y maneja el desplasamiento del menu */
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.menu {
+    color: white;
+    width: 2.2rem;
+    height: 2.7rem;
+    background-color: #7860bc;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0.5%;
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.NombresDeProyectos {
+    color: darkred;
+}
+
+body {
+    background-color: black;
+    background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    /* todo lo que hagamos aca altera el body, se podria hacer en puro html pero hay q usar css */
+}
+
+.Skills {
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    /* Con esto ubicamos el texto con el text-align : center; para imagenes es otra cosa*/
+}
+
+.Titulo {
+    /*color: white;*/
+    color: whitesmoke;
+    text-align: center;
+}
+
+.Subtitulo {
+    color: white;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 95px;
+}
+
+#item1 {
+    margin: left;
+    display: block;
+    float: center;
+}
+
+#item2 {
+    margin: -10px;
+    display: block;
+    float: center;
+}
+
+#item3 {
+    margin: 0px;
+    display: block;
+    float: center;
+}
+
+#item4 {
+    margin: 0px;
+    display: block;
+    float: center;
+}
+
+#item5 {
+    margin: 0px;
+    display: block;
+    float: center;
+}
+
+#item6 {
+    margin: 0px;
+    display: block;
+    float: center;
+}
+
+.footer {
+    color: whitesmoke;
+    text-align: right;
+    float: right;
+}
